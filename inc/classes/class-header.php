@@ -31,8 +31,9 @@ class Header {
 		$classes = esc_attr( implode( ' ', $this->generate_class_header() ) );
 
 		echo '<header class="'.$classes.'" >';
+        echo sprintf('<div class=%s>', esc_attr('header-inner'));
 		echo sprintf('<div class=%s>', esc_attr('container'));
-		echo sprintf('<div class=%s>', esc_attr('header-inner'));
+        echo sprintf('<div class=%s>', esc_attr('row'));
 
 	}
 
@@ -40,17 +41,15 @@ class Header {
 	{
 		echo '</div>';
 		echo '</div>';
+		echo '</div>';
 		echo '</header>';
 	}
 
 	public function header_main() {?>
-        <div class="header_main_left"><?php get_template_part('template-parts/header/logo'); ?></div>
-        <div class="header_main_center"><?php get_template_part('template-parts/header/nav'); ?></div>
-        <div class="header_main_right">
-            <?php
-            get_template_part('template-parts/header/toggle');
-            ?>
-        </div>
+        <div class="col-lg-4"><?php get_template_part('template-parts/header/logo'); ?></div>
+        <div class="col-lg-4"><?php get_template_part('template-parts/header/nav'); ?></div>
+        <div class="col-lg-4"><?php get_template_part('template-parts/header/toggle'); ?></div>
+        <div class="col-12"><?php get_template_part('template-parts/header/nav'); ?></div>
         <?php
 	}
 

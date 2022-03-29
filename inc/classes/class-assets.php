@@ -34,6 +34,7 @@ class Assets
 	public function register_styles()
 	{
 		wp_enqueue_style( 'cct-style', CTWP_BUILD_URI . '/css/main.css', array(), false, "all" );
+		wp_enqueue_style( 'bootstrap-style', CTWP_DIR_URI . '/assets/src/library/bootstrap/bootstrap.min.css', array(), false, "all" );
 	}
 
 	public function register_scripts()

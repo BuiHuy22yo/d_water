@@ -5,4 +5,4 @@
  *
  * @package ctwp
  */
-ctwp_menu_nav('aquila-header-menu','wrapNav');
+ctwp_menu_nav('primary','wrapNav');

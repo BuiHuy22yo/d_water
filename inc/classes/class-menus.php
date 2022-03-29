@@ -29,10 +29,9 @@ class Menus {
 
 	public function register_menus() {
 		register_nav_menus([
-			'aquila-header-menu' => esc_html__( 'Header Menu', 'dev_theme' ),
-			'aquila-footer-menu' => esc_html__( 'Footer Menu', 'dev_theme' ),
-			'left-menu' => esc_html__('Left Menu', 'dev_theme'),
-			'right-menu' => esc_html__('Right Menu', 'dev_theme'),
+			'primary' => esc_html__( 'Header Menu', 'dev_theme' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'dev_theme' ),
+            'shop-menu'   => esc_html__( 'Shop menu', 'dev_theme' ),
 		]);
 	}
 
