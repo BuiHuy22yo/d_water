@@ -37,7 +37,7 @@ class Assets
          * Library.
          */
 		wp_enqueue_style( 'bootstrap-style', CTWP_DIR_URI . '/assets/src/library/bootstrap/bootstrap.min.css', array(), '1.0.0', "all" );
-		wp_enqueue_style( 'fontawesome-style', CTWP_DIR_URI . '/assets/src/library/fontawesome-pro/css/all.css', array(), '1.0.0', "all" );
+		wp_enqueue_style( 'fontawesome-style', CTWP_DIR_URI . '/assets/src/library/fontawesome-6-1-1/css/all.css', array(), '1.0.0', "all" );
 
         /**
          * Style.

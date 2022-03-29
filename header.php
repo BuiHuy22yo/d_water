@@ -1,9 +1,9 @@
 <?php
 /**
-* Header
-*
-* @package ctwp
-*/
+ * Header
+ *
+ * @package ctwp
+ */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +15,11 @@
 
 </head>
 <body <?php body_class('theme_custom') ?>>
-    <?php
-        do_action('before_header');
+<?php
+do_action('before_header');
 
-        do_action('ctwp_header');
+do_action('ctwp_header');
 
-        do_action('after_header');
+do_action('after_header');
 
-        ?>
+?>

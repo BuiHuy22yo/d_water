@@ -1,7 +1,10 @@
-.header-inner {
-  @import "component/logo";
-  @import "component/search";
-  @import "component/toggle";
-  @import "component/menu_desktop";
-  @import "component/menu_mobile";
+@import "component/logo";
+@import "component/search";
+@import "component/toggle";
+@import "component/menu_desktop";
+@import "component/menu_mobile";
+@import "component/support";
+
+header {
+  padding: 10px 0;
 }
