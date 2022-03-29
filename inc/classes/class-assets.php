@@ -33,13 +33,22 @@ class Assets
 
 	public function register_styles()
 	{
-		wp_enqueue_style( 'cct-style', CTWP_BUILD_URI . '/css/main.css', array(), false, "all" );
-		wp_enqueue_style( 'bootstrap-style', CTWP_DIR_URI . '/assets/src/library/bootstrap/bootstrap.min.css', array(), false, "all" );
+        /**
+         * Library.
+         */
+		wp_enqueue_style( 'bootstrap-style', CTWP_DIR_URI . '/assets/src/library/bootstrap/bootstrap.min.css', array(), '1.0.0', "all" );
+		wp_enqueue_style( 'fontawesome-style', CTWP_DIR_URI . '/assets/src/library/fontawesome-pro/css/all.css', array(), '1.0.0', "all" );
+
+        /**
+         * Style.
+         */
+
+        wp_enqueue_style( 'cct-style', CTWP_BUILD_URI . '/css/main.css', array(), '1.0.0', "all" );
 	}
 
 	public function register_scripts()
 	{
-	    wp_enqueue_script( 'main-script', CTWP_BUILD_URI . '/js/main.js', array( 'jquery' ), false, true );
+	    wp_enqueue_script( 'main-script', CTWP_BUILD_URI . '/js/main.js', array( 'jquery' ), '1.0.0', true );
         wp_localize_script( 'main-script', 'main_script', array(
 		 		'ajax_url' => admin_url( 'admin-ajax.php' ),
 		 	) );
