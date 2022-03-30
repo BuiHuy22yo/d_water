@@ -9,8 +9,6 @@
 
 <?php
 	$logoDefault = get_field('logo_default','option') ? get_field('logo_default','option'):'';
-	$logoOptional = get_field('logo_optional','option');
-	$logoMobile = get_field('logo_mobile','option');
 ?>
 
 <div class="wrapLogo">

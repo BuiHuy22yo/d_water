@@ -1,3 +1,8 @@
+
+.subheader{
+  padding: 10px 0 ;
+}
+
 .wrapNav {
 
   & > ul {
@@ -12,10 +17,15 @@
       }
 
       .nav-link {
-        @extend .text-uppercase;
+        @extend .text-capitalize;
         @extend .d-flex;
         @extend .justify-content-sb;
         @extend .align-items-center;
+        @include resetList;
+        color:$color-black ;
+        &:hover {
+          color: #ff6400;
+        }
       }
     }
 

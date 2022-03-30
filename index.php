@@ -13,37 +13,47 @@
  */
 
 get_header();
+
 ?>
-    <main id="primary" class="site-main">
-
-        <?php
-        if (have_posts()) :
-
-            if (is_home() && !is_front_page()) :
+    <div class="dev_breadcrumb">
+        <div class="container">
+            <div class="inner">
+                <?php
+                echo cct_breadcrumb() ;
                 ?>
-                <div class="heading-title">
-                    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-                </div>
+            </div>
+        </div>
+    </div>
+    <main id="primary" class="site-main">
+        <div class="container bg-white">
             <?php
+            if (have_posts()) :
+
+                if (is_home() && !is_front_page()) :
+                    ?>
+                    <div class="heading-title">
+                        <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                    </div>
+                <?php
+                endif;
+
+                /* Start the Loop */
+                while (have_posts()) :
+                    the_post();
+
+                    get_template_part('template-parts/content', get_post_type());
+
+                endwhile;
+
+                the_posts_navigation();
+
+            else :
+
+                get_template_part('template-parts/content', 'none');
+
             endif;
-
-            /* Start the Loop */
-            while (have_posts()) :
-                the_post();
-
-                get_template_part('template-parts/content', get_post_type());
-
-            endwhile;
-
-            the_posts_navigation();
-
-        else :
-
-            get_template_part('template-parts/content', 'none');
-
-        endif;
-        ?>
-
+            ?>
+        </div>
     </main><!-- #main -->
 
 <?php

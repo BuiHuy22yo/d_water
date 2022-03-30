@@ -14,7 +14,7 @@ $phone = $customer_support && $customer_support['phone'] ? $customer_support['ph
 <div class="wrapSupport">
     <div class="wrapSupport-inner d-flex justify-content-center align-items-center">
         <?php if($icon) {?>
-        <div class="icon text-center rounded-circle text-white bg-dark mr-3">
+        <div class="icon text-center rounded-circle dev_text-yellow bg-dark me-3">
             <?php echo $icon ?>
         </div>
         <?php }?>

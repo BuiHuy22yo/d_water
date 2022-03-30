@@ -22,4 +22,6 @@ do_action('ctwp_header');
 
 do_action('after_header');
 
+do_action('ctwp_subheader');
+
 ?>

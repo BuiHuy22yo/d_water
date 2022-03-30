@@ -1,0 +1,67 @@
+.danh_sach_san_pham {
+  .inner-item {
+
+    .product-image, .product-info {
+      padding: 15px;
+    }
+
+    .label_product {
+      font-weight: bold;
+      clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
+      color: $color-red;
+      background: $bg-yellow;
+
+      .label_wrapper {
+        padding: 7px 5px;
+        font-size: 12px;
+      }
+    }
+
+    .product-name {
+      padding: 8px 0;
+
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .product-price {
+      font-size: 16px;
+
+      .price-sale {
+        color: #ff6400;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .price-regular {
+        text-decoration: line-through;
+        color: $text-secondary-color;
+        font-size: 12px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 6px 0 #32325d1a;
+
+      .product-image {
+        &:before {
+          position: absolute;
+          content: '';
+          background: #6c757d;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0.2;
+        }
+      }
+
+      .product-name {
+        a {
+          color: #ff6400;
+        }
+      }
+    }
+  }
+}
