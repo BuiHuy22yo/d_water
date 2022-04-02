@@ -31,7 +31,7 @@ if (!function_exists('ctwp_menu_nav')) {
 							}
 							$str = implode(" ", $menu_item->classes);
 							global $post;
-							$thePostID = $post->ID;
+                            $thePostID = isset($post->ID)? $post->ID : '' ;
 							$class_active = '';
 							if ($thePostID == $menu_item->object_id) {
 								$class_active = 'nav-item-active';

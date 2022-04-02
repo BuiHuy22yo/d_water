@@ -44,3 +44,14 @@ if (!function_exists('ctwp_button')) {
 		</div>
 	<?php }
 }
+
+if (!function_exists('get_discount')) {
+    function get_discount($regular = '', $sale = '')
+    {
+        $discount= 0;
+        if($regular && $sale ){
+            $discount = '- '.intval (100 - ($sale / $regular)*100) .'%';
+        }
+        return $discount;
+    }
+}

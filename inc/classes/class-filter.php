@@ -35,7 +35,7 @@ class Filter {
 
 	public function generate_class_on_body($classes) {
 		global $post;
-		$post_id = $post->ID;
+		$post_id = isset($post->ID)? $post->ID : '' ;
 
 		if (!$post_id) {
 			return $classes;
@@ -56,7 +56,7 @@ class Filter {
 
 	public function generate_class_on_header($classes) {
 		global $post;
-		$post_id = $post->ID;
+		$post_id = isset($post->ID)? $post->ID : '' ;
 
 		if (!$post_id) {
 			return $classes;
