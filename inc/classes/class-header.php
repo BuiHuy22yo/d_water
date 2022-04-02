@@ -52,14 +52,14 @@ class Header
 
     public function header_main()
     { ?>
-        <div class="col-4 d-lg-none d-block"><?php
-            get_template_part('template-parts/header/toggle');
-            get_template_part('template-parts/header/nav');
-            ?>
-        </div>
-        <div class="col-lg-2"><?php get_template_part('template-parts/header/logo'); ?></div>
-        <div class="col-lg-5"><?php get_template_part('template-parts/header/search'); ?></div>
-        <div class="col-lg-5"><?php get_template_part('template-parts/header/customer_support'); ?></div>
+<!--        <div class="col-4 d-lg-none d-block">--><?php
+//            get_template_part('template-parts/header/toggle');
+//            get_template_part('template-parts/header/nav');
+//            ?>
+<!--        </div>-->
+        <div class="col-4 col-sm-2 col-lg-2"><?php get_template_part('template-parts/header/logo'); ?></div>
+        <div class="col-12 dev_order-3 col-sm-6 col-lg-7"><?php get_template_part('template-parts/header/search'); ?></div>
+        <div class="col-8 dev_order-2 col-sm-4 col-lg-3  "><?php get_template_part('template-parts/header/customer_support'); ?></div>
         <?php
     }
 

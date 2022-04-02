@@ -19,13 +19,13 @@ $footer_text = $footer_bottom && $footer_bottom['text'] ? $footer_bottom['text']
 
 ?>
 <div class="row pt-5">
-    <div class="col-lg-4 ">
+    <div class="col-12 col-lg-4 ">
         <div class="footer-top footer-left">
-            <div class="title"><?php echo $left_text ?></div>
-            <div class="image">
+            <div class="title mb-3"><?php echo $left_text ?></div>
+            <div class="image mb-3">
                 <img src="<?php echo $left_image_url ?>" alt="">
             </div>
-            <p><?php echo $left_description ?></p>
+            <p class="mota mb-3"><?php echo $left_description ?></p>
             <?php
 
             if ($left_info) {
@@ -37,7 +37,7 @@ $footer_text = $footer_bottom && $footer_bottom['text'] ? $footer_bottom['text']
                         $icon = $item && $item['info_item'] && $item['info_item']['icon'] ? $item['info_item']['icon'] : "";
                         $text = $item && $item['info_item'] && $item['info_item']['text'] ? $item['info_item']['text'] : "";
                         ?>
-                        <div class="item d-flex">
+                        <div class="item d-flex mb-2">
                             <div class="icon me-2"><?php echo $icon ?></div>
                             <div class="text"><?php echo $text ?></div>
                         </div>
@@ -46,14 +46,14 @@ $footer_text = $footer_bottom && $footer_bottom['text'] ? $footer_bottom['text']
             <?php } ?>
         </div>
     </div>
-    <div class="col-lg-4 ">
+    <div class="col-12 col-lg-4 ">
         <div class="footer-top footer-center">
             <div class="title"></div>
         </div>
     </div>
-    <div class="col-lg-4 ">
+    <div class="col-12 col-lg-4 ">
         <div class="footer-top footer-right">
-            <div class="title"><?php echo $right_text ?></div>
+            <div class="title "><?php echo $right_text ?></div>
             <?php
             if ($right_list) {
                 ?>

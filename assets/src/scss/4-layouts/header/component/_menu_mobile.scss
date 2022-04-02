@@ -1,15 +1,6 @@
 .wrapNavMobile {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  background-color: $color-white;
   box-shadow: $box-shadow;
   transition: $transition;
-  transform: translateX(-105%);
-  min-width: 200px;
-  z-index: 2;
-  overflow-y: scroll;
   &.show {
     transition: $transition;
     transform: translateX(0);
@@ -22,7 +13,6 @@
       overflow: hidden;
     }
   }
-  padding: 20px 17px;
   .menu {
     & > .nav-item {
       padding: 10px 0;

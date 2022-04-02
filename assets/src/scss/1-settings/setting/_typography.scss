@@ -9,6 +9,9 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
 }
 ul , li ,p{
 	margin: 0;
@@ -26,4 +29,4 @@ li {
 	color: $bg-yellow;
 }
 
-
+@media (min-width: 1024px) {}

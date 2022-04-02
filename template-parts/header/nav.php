@@ -5,4 +5,4 @@
  *
  * @package ctwp
  */
-ctwp_menu_nav('primary','wrapNav');
+ctwp_menu_nav('primary','wrapNavMobile');

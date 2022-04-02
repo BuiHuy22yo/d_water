@@ -7,4 +7,16 @@
 
 header {
   padding: 10px 0;
+
+  .dev_order-3 {
+    @media (max-width: 575px) {
+      order: 3;
+    }
+  }
+
+  .dev_order-3 {
+    @media (max-width: 575px) {
+      order: 2;
+    }
+  }
 }

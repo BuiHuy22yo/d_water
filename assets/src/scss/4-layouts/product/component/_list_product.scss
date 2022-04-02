@@ -28,7 +28,9 @@
 
     .product-price {
       font-size: 16px;
-
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
       .price-sale {
         color: $color-text-icon;
         font-weight: bold;

@@ -1,0 +1,13 @@
+
+.form-control {
+  font-size: 16px;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.wrapSearch {
+  @media (max-width: 575px) {
+    margin-top: 10px;
+  }
+}
