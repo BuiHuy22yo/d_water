@@ -19,12 +19,14 @@ get_header();
         <div class="container">
             <div class="inner">
                 <?php
-                echo cct_breadcrumb() ;
+                if (!is_home() && !is_front_page()) {
+                    echo cct_breadcrumb();
+                }
                 ?>
             </div>
         </div>
     </div>
-    <main id="primary" class="site-main">
+    <main id="primary" class="site-main mb-4">
         <div class="container bg-white">
             <?php
             if (have_posts()) :
@@ -40,7 +42,9 @@ get_header();
                 /* Start the Loop */
                 while (have_posts()) :
                     the_post();
-
+                    if (is_home() && !is_front_page()) {
+                        get_template_part('template-parts/content', 'home');
+                    }
                     get_template_part('template-parts/content', get_post_type());
 
                 endwhile;

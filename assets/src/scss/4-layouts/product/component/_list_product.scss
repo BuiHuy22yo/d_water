@@ -29,7 +29,7 @@
       font-size: 16px;
 
       .price-sale {
-        color: #ff6400;
+        color: $color-text-icon;
         font-weight: bold;
         line-height: 1.2;
       }
@@ -59,7 +59,7 @@
 
       .product-name {
         a {
-          color: #ff6400;
+          color: $color-text-icon;
         }
       }
     }

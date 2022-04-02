@@ -31,9 +31,8 @@ class Footer {
 		$classes = esc_attr( implode( ' ', $this->generate_class_footer() ) );
 
 		echo '<footer class="'.$classes.'" >';
-		echo sprintf('<div class=%s>', esc_attr('container'));
-		echo sprintf('<div class=%s>', esc_attr('footer-inner'));
-
+        echo '<div class="footer-inner bg-white">';
+        echo '<div class="container ">';
 	}
 
 	public function close_tag_footer()
@@ -45,7 +44,7 @@ class Footer {
 
 	public function footer_main() {
 //		get_template_part('template-parts/footer/logo');
-//		get_template_part('template-parts/footer/button');
+		get_template_part('template-parts/footer/footer-main');
 
 	}
 

@@ -1,7 +1,7 @@
 <?php
+
 get_header();
 ?>
-
     <div class="dev_breadcrumb">
         <div class="container">
             <div class="inner">
@@ -15,7 +15,7 @@ get_header();
     </div>
     <main id="primary" class="site-main mb-4">
         <div class="container bg-white"><?php
-            get_template_part('template-parts/content', 'home'); ?>
+            get_template_part('template-parts/content', 'loop'); ?>
         </div>
     </main>
 <?php

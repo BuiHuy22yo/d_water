@@ -24,7 +24,7 @@
         @include resetList;
         color:$color-black ;
         &:hover {
-          color: #ff6400;
+          color: $color-text-icon;
         }
       }
     }
