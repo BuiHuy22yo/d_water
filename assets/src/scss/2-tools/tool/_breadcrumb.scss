@@ -1,9 +1,14 @@
 .dev_breadcrumb {
   padding: 10px 0;
   margin-bottom: 15px;
+  background: $bg-breadcrumb;
+
 
   .cct-breadcrumbs {
 
+  }
+  a {
+    color: $text-breadcrumb;
   }
 }
 

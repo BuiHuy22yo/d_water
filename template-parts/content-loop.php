@@ -27,7 +27,7 @@ if(!is_home() && !is_front_page()){
 $list_product = new WP_Query($args);
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('danh_sach_san_pham'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('danh_sach_san_pham bg-white'); ?>>
     <?php if ($list_product->have_posts()) { ?>
         <div class="row <?php echo $class = !is_home() && !is_front_page() ? '' : 'slide_slick'?>">
             <?php while ($list_product->have_posts()) : $list_product->the_post(); ?>
@@ -58,11 +58,11 @@ $list_product = new WP_Query($args);
         </div>
         <?php
         if (!is_home() && !is_front_page()) { ?>
-            <div class="pagination">
-                <ul class="pagination clearfix float-right">
+            <div class="dev_pagination">
+                <ul class="pagination-nav d-flex justify-content-end">
                     <li class="page-item disabled"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
                     </li>
-                    <li class="active page-item disabled"><a class="page-link" href="javascript:;">1</a></li>
+                    <li class="active page-item"><a class="page-link" href="javascript:;">1</a></li>
                     <li class="page-item"><a class="page-link" onclick="doSearch(2)"
                                              href="?&amp;page=2&amp;view=grid">2</a>
                     </li>

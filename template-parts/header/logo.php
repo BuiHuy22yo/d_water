@@ -18,7 +18,7 @@
 			<a href="<?php echo esc_url(site_url()) ?>">
 				<h1 class="logo">
 					<?php if ($logoDefault): ?>
-						<img src="<?php echo esc_url( matthewruddy_image_resize(wp_get_attachment_url($logoDefault), 110, 41, false, false)['url'] ) ?>" alt="<?php echo esc_html(bloginfo('title')) ?>">
+						<img src="<?php echo esc_url( matthewruddy_image_resize(wp_get_attachment_url($logoDefault), 60, 60, false, false)['url'] ) ?>" alt="<?php echo esc_html(bloginfo('title')) ?>">
 					<?php endif ?>
 				</h1>
 			</a>
@@ -26,7 +26,7 @@
 			<a href="<?php echo esc_url(site_url()) ?>">
 				<div class="logo">
 					<?php if ($logoDefault): ?>
-						<img src="<?php echo esc_url( matthewruddy_image_resize(wp_get_attachment_url($logoDefault), 110, 41, false, false)['url'] ) ?>" alt="<?php echo esc_html(bloginfo('title')) ?>">
+						<img src="<?php echo esc_url( matthewruddy_image_resize(wp_get_attachment_url($logoDefault), 60, 60, false, false)['url'] ) ?>" alt="<?php echo esc_html(bloginfo('title')) ?>">
 					<?php endif ?>
 				</div>
 			</a>

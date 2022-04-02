@@ -14,7 +14,7 @@ get_header();
         </div>
     </div>
     <main id="primary" class="site-main mb-4">
-        <div class="container bg-white"><?php
+        <div class="container"><?php
             get_template_part('template-parts/content', 'home'); ?>
         </div>
     </main>

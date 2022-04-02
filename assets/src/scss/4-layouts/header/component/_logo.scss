@@ -1,4 +1,8 @@
-h1.logo {
+.logo {
 	width: max-content;
 	margin: 0;
+	img {
+		width: 60px;
+		height: auto;
+	}
 }
