@@ -4,6 +4,12 @@ $dev_des = get_post_meta(get_the_id(),'description',true);
 $sale = get_post_meta(get_the_id(), 'sale_price', true);
 $regular = get_post_meta(get_the_id(), 'regular_price', true);
 $symbol = get_field('currency_symbol', 'option') ? get_field('currency_symbol', 'option') : 'đ';
+if($sale){
+    $sale_format = number_format($sale, 0, '', ',');
+}
+if($regular){
+    $regular_format = number_format($regular, 0, '', ',');
+}
 ?>
 
 
@@ -22,10 +28,10 @@ $symbol = get_field('currency_symbol', 'option') ? get_field('currency_symbol', 
                 <?php if ($regular) { ?>
                     <div class="product-price d-inline-flex">
                         <?php if ($sale && $sale < $regular) { ?>
-                            <div class="price-sale"><?php echo $sale . $symbol ?></div>
-                            <div class="price-regular"><?php echo $regular . $symbol ?></div>
+                            <div class="price-sale"><?php echo $sale_format . $symbol ?></div>
+                            <div class="price-regular"><?php echo $regular_format . $symbol ?></div>
                         <?php } else { ?>
-                            <div class="price-sale"><?php echo $regular . $symbol ?></div>
+                            <div class="price-sale"><?php echo $regular_format . $symbol ?></div>
                         <?php } ?>
                     </div>
                 <?php } ?>
