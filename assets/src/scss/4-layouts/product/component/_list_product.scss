@@ -1,7 +1,14 @@
 .danh_sach_san_pham {
   overflow: hidden;
   .inner-item {
-
+    .product-image {
+      .image {
+        padding-top: 135%;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
     .product-image, .product-info {
       padding: 15px;
     }
@@ -57,6 +64,7 @@
           top: 0;
           left: 0;
           opacity: 0.2;
+          z-index: 5;
         }
       }
 

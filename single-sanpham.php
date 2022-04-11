@@ -13,7 +13,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="single-sanpham ">
+    <div class="single-sanpham mb-4">
         <div class="inner">
             <div class="container">
                 <?php
